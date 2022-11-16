@@ -24,3 +24,13 @@ contributors: <a href="https://www.researchgate.net/profile/Philip-Hulme-2">Phil
 - <em>protarea.csv</em>: proportion of terrestrial surface under some form of protection (source: World Bank)
 - <em>faoag.csv</em>: value added proportion of GDP from agriculture, fisheries, and forestry (source: Food and Agriculture Organization of the United Nations)
 - <em>continent.countryINVACOST.csv</em> & <em>fao.cntry.code.csv</em> are code files for merging countries and regions across different datasets
+
+## R packages
+- <code>invacost</code>
+- <code>lme4</code>
+- <code>dismo</code>
+- <code>gbm</code>
+- <code>boot</code>
+- <code>VIM</code>
+- <code>mice</code>
+
