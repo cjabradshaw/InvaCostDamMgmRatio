@@ -13,7 +13,7 @@ contributors: <a href="https://www.researchgate.net/profile/Christine-Barry-4">P
 <br>
 
 ## Scripts
-- <code>ntlScaleCostDiffInvaCostgithub.R</cost>: main R code for analysis
+- <code>ntlScaleCostDiffInvaCostgithub.R</code>: main R code for analysis
 - <code>new_lmer_AIC_tables3.R</code>: source code for information-theoretic algorithms
 - <code>r.squared.R</code>: source code for calculating goodness-of-fit for linear models (including mixed-effects models)
 
