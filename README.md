@@ -25,7 +25,7 @@ contributors: <a href="https://www.researchgate.net/profile/Philip-Hulme-2">Phil
 - <em>faoag.csv</em>: value added proportion of GDP from agriculture, fisheries, and forestry (source: Food and Agriculture Organization of the United Nations)
 - <em>continent.countryINVACOST.csv</em> & <em>fao.cntry.code.csv</em> are code files for merging countries and regions across different datasets
 
-## R packages
+## Required R packages
 - <code>invacost</code>
 - <code>lme4</code>
 - <code>dismo</code>
