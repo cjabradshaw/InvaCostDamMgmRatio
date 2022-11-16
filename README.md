@@ -1,5 +1,5 @@
 # InvaCost Damage:Management Cost Ratio
-<img align="right" src="www/popgr.png" alt="population growth icon" width="200" style="margin-top: 20px">
+<img align="right" src="www/damage.png" alt="insect damage icon" width="200" style="margin-top: 20px">
 
 National-level prediction and extrapolation of invasive-species costs (ratio of damage:management costs) based on socio-economic traits of countries
 
