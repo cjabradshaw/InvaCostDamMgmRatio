@@ -1,7 +1,7 @@
 # InvaCost Damage:Management Cost Ratio
 <img align="right" src="www/damage.png" alt="insect damage icon" width="150" style="margin-top: 20px">
 
-National-level prediction and extrapolation of invasive-species costs (ratio of damage:management costs) based on socio-economic traits of countries (data derived from the <a href="https://github.com/Farewe/invacost"><em>InvaCost</em></a> database)
+National-level prediction and extrapolation of invasive-species costs (ratio of damage:management costs) based on socio-economic traits of countries (cost data derived from the <a href="https://github.com/Farewe/invacost"><em>InvaCost</em></a> database)
 
 <br>
 Prof <a href="https://globalecologyflinders.com/people/#DIRECTOR">Corey J. A. Bradshaw</a> <br>
