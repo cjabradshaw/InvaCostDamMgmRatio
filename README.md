@@ -9,7 +9,7 @@ Prof <a href="https://globalecologyflinders.com/people/#DIRECTOR">Corey J. A. Br
 October 2022 <br>
 <a href=mailto:corey.bradshaw@flinders.edu.au>e-mail</a> <br>
 <br>
-contributors: <a href="https://www.researchgate.net/profile/Christine-Barry-4">Phil Hulme</a>, <a href="https://researchnow.flinders.edu.au/en/persons/charlie-huveneers-2">Emma Hudgins</a>, <a href="http://profiles.murdoch.edu.au/myprofile/adrian-gleiss/">Brian Leung</a>, Pierre Courtois, Franck Courchamp<br>
+contributors: <a href="https://www.researchgate.net/profile/Philip-Hulme-2">Phil Hulme</a>, <a href="https://carleton.ca/biology/people/emma-hudgins/">Emma Hudgins</a>, <a href="https://www.mcgill.ca/qls/researchers/brian-leung">Brian Leung</a>, <a href="https://www.cee-m.fr/member/courtois-pierre/">Pierre Courtois</a>, <a href="https://www.ese.universite-paris-saclay.fr/en/team-members/franck-courchamp/">Franck Courchamp</a><br>
 <br>
 
 ## Scripts
