@@ -1,5 +1,6 @@
 # InvaCost Damage:Management Cost Ratio
 <img align="right" src="www/damage.png" alt="insect damage icon" width="150" style="margin-top: 20px">
+<img align="left" src="www/InvaCostLogo.png" alt="InvaCost" width="150" style="margin-top: 20px">
 
 National-level prediction and extrapolation of invasive-species costs (ratio of damage:management costs & proportion of total costs due to damage) based on socio-economic traits of countries (cost data derived from the <a href="https://github.com/Farewe/invacost"><em>InvaCost</em></a> database)
 
