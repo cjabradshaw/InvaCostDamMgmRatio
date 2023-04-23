@@ -412,12 +412,6 @@ head(VAag)
 cpi <- read.csv("data/CPI.csv")
 head(cpi)
 
-# mean annual temperature (not included)
-tmpr <- read.csv("data/cntry.tmpr.csv")
-head(tmpr)
-tmpr.ann <- tmpr[,c(1,14)]
-head(tmpr.ann)
-
 # gov expenditure on education (% GDP)
 # https://data.worldbank.org/indicator/SE.XPD.TOTL.GD.ZS
 expedu <- read.csv("data/govexpedu.csv")
