@@ -405,12 +405,6 @@ head(fao.cntry.code)
 VAag <- merge(VAag1, fao.cntry.code, by="country", all=T)
 head(VAag)
 
-## proportion of land protected (% world bank) (not included)
-# https://data.worldbank.org/indicator/ER.LND.PTLD.ZS
-pa <- read.csv("data/protarea.csv")
-pa <- pa[,-1]
-head(pa)
-
 # Transparency International
 # Brenton-Rule et al. 2016 - corruption (no relationship with # invasive species)
 # https://royalsocietypublishing.org/doi/full/10.1098/rspb.2016.0901
