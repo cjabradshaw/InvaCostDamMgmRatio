@@ -11,8 +11,8 @@ April 2023 <br>
 <br>
 contributors: <a href="https://www.researchgate.net/profile/Philip-Hulme-2">Phil Hulme</a>, <a href="https://carleton.ca/biology/people/emma-hudgins/">Emma Hudgins</a>, <a href="https://www.mcgill.ca/qls/researchers/brian-leung">Brian Leung</a>, <a href="https://www.cee-m.fr/member/courtois-pierre/">Pierre Courtois</a>, <a href="https://scholar.google.com/citations?user=59VAYs4AAAAJ&hl=en">Anna Turbelin</a>, <a href="https://www.trinity.edu/directory/smcdermo">Shana McDermott</a>, <a href="https://www.uidaho.edu/cals/agricultural-economics-and-rural-sociology/our-people/katherine-lee">Katie Lee</a>, <a href="https://www.linkedin.com/in/danish-ali-ahmed-655934192/">Danish Ahmed</a>, <a href="https://azimpremjiuniversity.edu.in/people/alok-bang">Alok Bang</a>, <a href="[https://www.abdn.ac.uk/people/thomas.bodey/](https://www.research.ed.ac.uk/en/persons/guillaume-latombe)">Guillaume Latombe</a>, <a href="https://www.abdn.ac.uk/people/thomas.bodey/">Thomas Bodey</a>, <a href="https://scholar.google.com/citations?user=fwHUGm0AAAAJ&hl=de">Phillip Haubrock</a>, <a href="https://www.ese.universite-paris-saclay.fr/en/team-members/franck-courchamp/">Franck Courchamp</a><br>
 <br>
-
 Accompanies paper:<br>
+<br>
 Bradshaw, CJA, PE Hulme, EJ Hudgins, B Leung, M Kourantidou, P Courtois, AJ Turbelin, SM McDermott, K Lee, DA Ahmed, G Latombe, A Bang, TW Bodey, PJ Haubrock, F Saltré, F Courchamp. Weaker economies experience higher relative damage costs arising from biological invasions (in review)
 <br>
 <br>
