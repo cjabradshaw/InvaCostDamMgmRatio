@@ -40,7 +40,7 @@ Bradshaw, CJA, PE Hulme, EJ Hudgins, B Leung, M Kourantidou, P Courtois, AJ Turb
 
 
 ## Required R packages
-- <code>invacost</code>
+- <code><a href="https://cran.r-project.org/web/packages/invacost/invacost.pdf">invacost</a></code>
 - <code>lme4</code>
 - <code>dismo</code>
 - <code>gbm</code>
