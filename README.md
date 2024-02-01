@@ -22,7 +22,7 @@ Bradshaw, CJA, PE Hulme, EJ Hudgins, B Leung, M Kourantidou, P Courtois, AJ Turb
 <br>
 
 ## <a href="https://github.com/cjabradshaw/InvaCostDamMgmRatio/tree/main/scripts">Scripts</a>
-- <code>ntlScaleCostDiffInvaCostgithub.R</code>: main R code for analysis
+- <code>ntlScaleCostDiffInvaCostGithub2024.R</code>: main R code for analysis
 - <code>new_lmer_AIC_tables3.R</code>: source code for information-theoretic algorithms
 - <code>r.squared.R</code>: source code for calculating goodness-of-fit for linear models (including mixed-effects models)
 
