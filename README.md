@@ -1,4 +1,5 @@
 # <em>InvaCost</em> Damage Cost:Management Expenditure Ratio
+<a href="https://doi.org/10.5281/zenodo.10801171"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.10801171.svg" alt="DOI"></a>
 <img align="right" src="www/InvaCostLogoIdea10.jpg" alt="insect damage icon" width="150" style="margin-top: 20px">
 
 National-level assessement of the drivers of invasive-species costs (ratio of damage costs:management expenditure & rate of ratio change) based on socio-economic traits of countries (cost data derived from the <a href="https://github.com/Farewe/invacost"><em>InvaCost</em></a> database)
