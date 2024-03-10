@@ -13,8 +13,7 @@ contributors: <a href="https://www.researchgate.net/profile/Philip-Hulme-2">Phil
 <br>
 Accompanies paper:<br>
 <br>
-Bradshaw, CJA, PE Hulme, EJ Hudgins, B Leung, M Kourantidou, P Courtois, AJ Turbelin, SM McDermott, K Lee, DA Ahmed, G Latombe, A Bang, TW Bodey, PJ Haubrock, F Saltré, F Courchamp. Damage costs from invasive species exceed management expenditure in nations experiencing lower economic activity. <em>Ecological Economics</em> (in review)
-<br>
+Bradshaw, CJA, PE Hulme, EJ Hudgins, B Leung, M Kourantidou, P Courtois, AJ Turbelin, SM McDermott, K Lee, DA Ahmed, G Latombe, A Bang, TW Bodey, PJ Haubrock, F Saltré, F Courchamp. 2024. <a href="http://doi.org/10.1016/j.ecolecon.2024.108166">Damage costs from invasive species exceed management expenditure in nations experiencing lower economic activity</a>. <em>Ecological Economics</em> doi:10.1016/j.ecolecon.2024.108166
 <br>
 and preprint:<br>
 <br>
