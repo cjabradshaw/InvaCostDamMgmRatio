@@ -44,7 +44,7 @@ Bradshaw, CJA, PE Hulme, EJ Hudgins, B Leung, M Kourantidou, P Courtois, AJ Turb
 
 
 ## Required R packages
-<code><a href="https://cran.r-project.org/web/packages/invacost/invacost.pdf">invacost</a></code>, <code>lme4</code>, <code>dismo</code>, <code>gbm</code>, <code>boot</code>, <code>VIM</code>, <code>mice</code>, <code>performance</code>, <code>sjPlot</code>, <code>rworldmap</code>, <code>rgeos</code>, <code>SpatialEpi</code>, <code>nlme</code>, <code>rcompanion</code>,
+<code><a href="https://cran.r-project.org/web/packages/invacost/invacost.pdf">invacost</a></code>, <code>lme4</code>, <code>dismo</code>, <code>gbm</code>, <code>boot</code>, <code>VIM</code>, <code>mice</code>, <code>performance</code>, <code>sjPlot</code>, <code>rworldmap</code>, <code>rgeos</code>, <code>SpatialEpi</code>, <code>nlme</code>, <code>rcompanion</code>
 
 <a href="https://www.flinders.edu.au"><img align="bottom-left" src="www/Flinders_University_Logo_Horizontal_RGB_Master.png" alt="Flinders University logo" width="200" style="margin-top: 20px"></a>
 <a href="https://globalecologyflinders.com"><img align="bottom-left" src="www/GEL Logo Kaurna New Transp.png" alt="GEL logo" width="200" style="margin-top: 20px"></a>
