@@ -44,7 +44,121 @@ Bradshaw, CJA, PE Hulme, EJ Hudgins, B Leung, M Kourantidou, P Courtois, AJ Turb
 
 
 ## Required R packages
-<code><a href="https://cran.r-project.org/web/packages/invacost/invacost.pdf">invacost</a></code>, <code>lme4</code>, <code>dismo</code>, <code>gbm</code>, <code>boot</code>, <code>VIM</code>, <code>mice</code>, <code>performance</code>, <code>sjPlot</code>, <code>rworldmap</code>, <code>rgeos</code>, <code>SpatialEpi</code>, <code>nlme</code>, <code>rcompanion</code>
+<code><a href="https://cran.r-project.org/web/packages/invacost/invacost.pdf">invacost</a></code>, <code>lme4</code>, <code>dismo</code>, <code>gbm</code>, <code>boot</code>, <code>VIM</code>, <code>mice</code>, <code>performance</code>, <code>sjPlot</code>, <code>rworldmap</code>, <code>rgeos</code>, <code>SpatialEpi</code>, <code>nlme</code>, <code>rcompanion</code>, <code>jsonlite</code>
+
+## Corrected temporal reanalysis
+
+The original temporal-resampling predicate in
+`scripts/ntlScaleCostDiffInvaCostGithub2024.R` incorrectly used `>=` for
+both interval bounds. It now uses the stated lower and upper bounds. The
+resulting historical script retains the original interval endpoints, which
+share boundary years.
+
+`scripts/corrected_temporal_reanalysis.R` is the reproducible post-publication
+reanalysis. It expands eligible observed, high-reliability costs to annual
+records, uses a fixed seed, handles empty country-period strata explicitly,
+propagates bootstrap uncertainty from paired damage and management resamples,
+uses ML for information-criterion comparisons, and evaluates the pre-specified
+combined model set across eight imputations rather than averaging imputed
+predictors. It writes ignored outputs, including input and package metadata:
+
+```sh
+Rscript scripts/corrected_temporal_reanalysis.R outputs/corrected-temporal-reanalysis 1000
+```
+
+It evaluates inclusive bounded three-year windows (for a minimal comparison
+with the historical endpoints), disjoint three-year windows
+(2000--2002, ..., 2018--2020), and relaxed disjoint five- and seven-year
+windows. Wider windows improve within-window coverage at the cost of temporal
+resolution, so they are sensitivity analyses rather than replacements for the
+stated three-year method. The generated `run_metadata.csv` records the exact
+package and data version.
+
+Using `invacost` 1.1.7 (whose bundled database is InvaCost v4.1), the
+three-year definitions retained 48--50 countries for the cross-sectional
+ratio, but only 23--26 for the temporal rate. Their lowest mean-AICc model was
+intercept-only. Relaxing the windows changed the preferred ratio model:
+five-year bins selected agricultural land, whereas seven-year bins selected
+imports (pooled inclusion weight 0.74). This sensitivity to the temporal
+definition means that the relaxed bins cannot provide robust support for the
+published imports conclusion; nor do they remedy the sparse temporal-rate
+sample.
+
+## External validation data and analyses
+
+`data/un_comtrade_pathway_imports_2016_2020.csv` is a committed UN Comtrade
+snapshot of annual all-import, live-animal, fish/aquatic-product, live-plant
+and wood-product imports for the analysis countries. It covers 46 countries
+with complete or partial 2016--2020 data. `data/griis_country_species_richness.csv`
+is a GBIF snapshot of GRIIS country-checklist richness, retaining the GBIF
+dataset UUID for each of the 47 matched countries. Refresh either snapshot
+with:
+
+```sh
+Rscript scripts/download_external_snapshots.R
+```
+
+`scripts/external_validation_analysis.R` tests the pathway and total-import
+predictors, their interaction with the existing corruption-capacity covariate,
+GRIIS richness, separate log damage and management outcomes, and a
+source-reference reporting-effort sensitivity:
+
+```sh
+Rscript scripts/external_validation_analysis.R
+```
+
+For the seven-year sensitivity outcome, pathway models use 42 common complete
+cases. Wood-product imports had the lowest AICc for the ratio and damage
+models (weights 0.32 and 0.34), while all imports ranked second for the ratio
+(weight 0.16). Management conditional on damage had no clearly dominant
+model. Crucially, the ratio model including all imports and reporting effort
+had weight 0.79, compared with 0.07 for imports alone. These exploratory
+results are consistent with an ascertainment-sensitive association, not a
+robust, stand-alone total-imports effect.
+
+## Eurostat environmental-capacity subset
+
+`data/eurostat_environmental_protection_expenditure_2016_2020.csv` is a
+committed snapshot from Eurostat table `gov_10a_exp`: general-government
+COFOG GF05 environmental-protection expenditure as a percentage of GDP. It is
+explicitly a broad environmental-capacity proxy, **not** invasive-species
+management expenditure. Refresh the snapshot and rerun the expanded
+validation analysis with:
+
+```sh
+Rscript scripts/download_eurostat_environment_proxy.R
+Rscript scripts/external_validation_analysis.R
+```
+
+Twelve countries report at least one 2016--2020 value, and ten overlap the
+pathway-trade ratio subset. The intercept-only model had AICc weight 0.77;
+the environmental-capacity and all-imports models had weights 0.12 and 0.10,
+respectively. This small, geographically restricted proxy analysis therefore
+does not corroborate the proposed imports--capacity mechanism and must not be
+treated as validation of national invasive-species management expenditure.
+
+## Adaptive boosted regression tree sensitivity
+
+`scripts/adaptive_brt_external_validation.R` applies the adaptive BRT
+calibration strategy used in the
+[`wealthwellbeingageingpop`](https://github.com/cjabradshaw/wealthwellbeingageingpop)
+analysis. For the external-validation ratio dataset it searches bag fractions,
+learning rates, tree complexities, fold counts and admissible node sizes, then
+records every calibration attempt and bootstrap failure rather than treating
+non-convergence as a result. It assesses total imports, wood-product imports,
+corruption-based capacity, GRIIS richness and reporting effort on the 42
+complete cases:
+
+```sh
+Rscript scripts/adaptive_brt_external_validation.R 30
+```
+
+The 30-replicate run produced 29 successful, acceptable bootstrap fits. The
+calibrated model had cross-validated correlation 0.41. Median relative
+influences were 31.4% for GRIIS richness, 20.2% for wood-product imports,
+19.7% for reporting effort, 14.5% for capacity and 13.3% for total imports;
+all 95% bootstrap intervals were broad. This is exploratory, observational
+evidence and not confirmation of a robust total-imports effect.
 
 <a href="https://www.flinders.edu.au"><img align="bottom-left" src="www/Flinders_University_Logo_Horizontal_RGB_Master.png" alt="Flinders University logo" width="200" style="margin-top: 20px"></a>
 <a href="https://globalecologyflinders.com"><img align="bottom-left" src="www/GEL Logo Kaurna New Transp.png" alt="GEL logo" width="200" style="margin-top: 20px"></a>
