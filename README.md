@@ -4,7 +4,7 @@
 
 National-level assessement of the drivers of invasive-species costs (ratio of damage costs:management expenditure & rate of ratio change) based on socio-economic traits of countries (cost data derived from the <a href="https://github.com/Farewe/invacost"><em>InvaCost</em></a> database)
 
-<strong>** Coding error discovered in 2026 and now updated (see <a href="https://github.com/cjabradshaw/InvaCostDamMgmRatio/tree/main/scripts">Scripts</a> folder) ** </strong>
+<strong>** Coding error discovered in 2026 and now updated (see <a href="https://github.com/cjabradshaw/InvaCostDamMgmRatio/tree/main/scripts">Scripts</a> folder) **</strong><br>
 The original temporal-resampling predicate in `scripts/ntlScaleCostDiffInvaCostGithub2024.R` incorrectly used `>=` for
 both interval bounds. It now uses the stated lower and upper bounds. The resulting historical script retains the original interval endpoints, which share boundary years. Other improvements included adaptive boosted regression trees, better multiple imputation, and more robust treatment of phases.
 
