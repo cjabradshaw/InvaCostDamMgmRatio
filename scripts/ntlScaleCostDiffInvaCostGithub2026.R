@@ -1,6 +1,6 @@
 ##########################################################################################################
 ## national-level prediction & extrapolation of costs based on socio-economic traits
-## InvaCost Workshop 2022
+## Damage vs. management costs analysis
 ## January 2024 / updated September 2026
 ## CJA Bradshaw
 ##########################################################################################################
@@ -951,7 +951,7 @@ plot(log10(OC.dat$GDPpcRecent), log10(OC.dat$dam.mgm), pch=19, ylab="log10 damag
 fit <- lm(log10(OC.dat$dam.mgm) ~ log10(OC.dat$GDPpcRecent))
 abline(fit,lty=2, col="red")
 
-## FAO proportion of GDP devoted to agriculture
+## FAO agricultural land as a proportion of land area
 ## Agriculture, forestry, and fishing, value added (% of GDP)
 ## https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS
 # Agriculture, forestry, and fishing corresponds to ISIC divisions 1-3 and includes forestry, hunting, and fishing, as well as
@@ -984,7 +984,7 @@ head(VAag)
 # Transparency International
 # Brenton-Rule et al. 2016 - corruption (no relationship with # invasive species)
 # https://royalsocietypublishing.org/doi/full/10.1098/rspb.2016.0901
-# Corruption Perception index https://www.transparency.org/en/cpi/2021
+# Corruption Perceptions index https://www.transparency.org/en/cpi/2021
 cpi <- read.csv(paste(dir.path,"CPI.csv",sep=""))
 head(cpi)
 
@@ -2196,7 +2196,7 @@ lines(val.med[,2], pred.lo[,2], type="l", lty=2, col="red")
 lines(val.med[,2], pred.up[,2], type="l", lty=2, col="red")
 
 plot(val.med[,3],pred.med[,3],type="l",ylim=c(min(pred.lo[,3]),max(pred.up[,3])),
-     lwd=2, ylab="(←lower) dam:mgm (higher→)",  xlab="(←higher) corruption perception index (lower→)" )
+     lwd=2, ylab="(←lower) dam:mgm (higher→)",  xlab="(←higher) corruption perceptions index (lower→)" )
 lines(val.med[,3], pred.lo[,3], type="l", lty=2, col="red")
 lines(val.med[,3], pred.up[,3], type="l", lty=2, col="red")
 
